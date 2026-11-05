@@ -1,0 +1,21 @@
+{
+  "name": "utc-date-expression-parser",
+  "version": "1.0.0",
+  "description": "A small, testable TypeScript parser and evaluator for UTC date expressions.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.test.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "typescript": "^5.8.3",
+    "vitest": "^4.1.12"
+  }
+}
